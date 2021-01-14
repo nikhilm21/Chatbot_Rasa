@@ -98,8 +98,46 @@ nlu:
     - ok
     - hmm
 
+##Closing
+
 - intent: closing_1
   examples: |
     - how long does it take to close
     - when will this close
     - time duration for closure
+
+- intent: closing_2
+  examples: |
+    - why does it take so long to close
+    - why such a long duration
+    - so much time?
+    - can you make it quick?
+
+- intent: closing_3
+  examples: |
+    - what if rate expires before closing
+    - what if i close late
+    - will the rate change
+
+- intent: closing_4
+  examples: |
+    - is escrow required?
+    - is escrow essential
+    - what if dont choose escrow
+    - i dont want escrow
+
+- intent: closing_5
+  examples: |
+    - what’s the cost to waive escrow?
+    - how much to remove escrow?
+
+- intent: closing_6
+  examples: |
+    - can I waive property inspection for refi?   
+    - what if i dont want insepection for refi?
+
+
+- intent: company_information
+  examples: |
+    - tell me more about your company
+    - what does your company do

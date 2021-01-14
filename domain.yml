@@ -9,6 +9,12 @@ intents:
   - mood_unhappy
   - bot_challenge
   - closing_1
+  - closing_2
+  - closing_3
+  - closing_4
+  - closing_5
+  - closing_6
+  - company_information
   - thanks
 
 responses:
@@ -38,7 +44,28 @@ responses:
   - text: "For a typical refinance our average closing is 6 to 8 weeks. We know how important your\n 
   time is, so we do our best to keep things moving fast to closing. \n
   you can help by staying on top of uploading your docs as they're requested."
-           
+
+  utter_closing_2:
+  - text: "There are many factors outside our control, including third parties\n,
+  but we do our best to streamline the process for you. FYI, the national average is 10 to 12 weeks."
+
+  utter_closing_3:
+  - text: "If we go over the 60 day rate lock deadline, we will extend the rate at no charge.\n
+  you can help by staying on top of uploading your docs as they're requested"
+
+  utter_closing_4:
+  - text: "Escrow is optional for all loans under 80% Loan-to-value (LTV)"
+
+  utter_closing_5:
+  - text: "We waive the escrow as long as your loan is below 80% Loan-to-value (LTV), but you cannot waive escrows if the LTV is over 80%."
+
+  utter_closing_6:
+  - text: "Good question. Inspection waivers are decided by Fannie May and Freddie Mac, which is outside of our control. We can answer your\n
+   question only after your application is completed and we have received all required documents."
+
+  utter_company_information:
+  - text: "Interfirst has been serving homeowners since 2001, with over $36B loans locked. A+ Rating with BBB and 4.4 score on Google reviews.\n 
+  We offer zero points, zero origination fees, zero application fees or commissions for all our Fixed Rate, Short Term, Cash Out options. "
 
 session_config:
   session_expiration_time: 60
