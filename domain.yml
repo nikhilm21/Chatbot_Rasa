@@ -8,6 +8,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - closing_1
+  - thanks
 
 responses:
   utter_greet:
@@ -28,6 +30,15 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_welcome:
+  - text: "Welcome"
+
+  utter_closing_1:
+  - text: "For a typical refinance our average closing is 6 to 8 weeks. We know how important your\n 
+  time is, so we do our best to keep things moving fast to closing. \n
+  you can help by staying on top of uploading your docs as they're requested."
+           
 
 session_config:
   session_expiration_time: 60

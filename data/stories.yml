@@ -28,3 +28,11 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: closing
+  steps:
+  - intent: closing_1
+  - action: utter_closing_1
+  - intent: thanks
+  - action: utter_welcome
+  - action: utter_goodbye

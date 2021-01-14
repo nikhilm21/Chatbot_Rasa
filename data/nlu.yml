@@ -90,3 +90,16 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - ok
+    - hmm
+
+- intent: closing_1
+  examples: |
+    - how long does it take to close
+    - when will this close
+    - time duration for closure
