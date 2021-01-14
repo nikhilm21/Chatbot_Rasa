@@ -141,3 +141,18 @@ nlu:
   examples: |
     - tell me more about your company
     - what does your company do
+    - some information about your company
+
+- intent: more_info
+  examples: |
+    - where can i find out more
+    - i need more info
+
+- intent: dissatisfied
+  examples: |
+   - I'm not happy with your answers
+   - you are wrong
+   - i dislike your service
+   - i dislike you
+   - im going to complaint
+   - i aint happy

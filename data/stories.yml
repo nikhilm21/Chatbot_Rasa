@@ -49,7 +49,3 @@ stories:
   - action: utter_welcome
   - action: utter_goodbye
 
-- story: company_information 
-  steps:
-  - intent: company_information
-  - action: utter_company_information

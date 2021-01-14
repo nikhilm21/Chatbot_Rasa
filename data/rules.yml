@@ -12,3 +12,17 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: Send user to home loan advisor when user is dissatisfid
+  steps:
+  - intent: dissatisfied
+  - action: utter_dissatisfied
+
+- rule: Give company information whenever asked
+  steps:
+  - intent: company_information
+  - action: utter_company_information
+
+- rule: Send basic links and about us
+  steps:
+  - intent: more_info
+  - action: utter_more_info

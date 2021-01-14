@@ -15,6 +15,8 @@ intents:
   - closing_5
   - closing_6
   - company_information
+  - dissatisfied
+  - more_info
   - thanks
 
 responses:
@@ -39,6 +41,10 @@ responses:
 
   utter_welcome:
   - text: "Welcome"
+
+  utter_dissatisfied:
+  - text: "I recommend you talk with one of our home loan advisors who will personally answer your questions. Can I set up a phone appointment for you?"  
+  #TODO:Add yes/no buttons for phone appointment 
 
   utter_closing_1:
   - text: "For a typical refinance our average closing is 6 to 8 weeks. We know how important your\n 
@@ -66,6 +72,10 @@ responses:
   utter_company_information:
   - text: "Interfirst has been serving homeowners since 2001, with over $36B loans locked. A+ Rating with BBB and 4.4 score on Google reviews.\n 
   We offer zero points, zero origination fees, zero application fees or commissions for all our Fixed Rate, Short Term, Cash Out options. "
+
+  utter_more_info:
+  - text: "You can visit interfirst.com and see links to BBB and About us in the footer"
+
 
 session_config:
   session_expiration_time: 60
