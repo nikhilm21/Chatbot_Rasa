@@ -156,3 +156,62 @@ nlu:
    - i dislike you
    - im going to complaint
    - i aint happy
+
+- intent: anger_response
+  examples: |
+    - You guys suck
+    - I'm not going to use you
+    - Worst company ever
+    - I want to report 
+    - I want to report an issue
+    - I have a complaint
+    - Not happy with the service
+
+- intent: change_lender
+  examples: |
+    - Sorry choose another lender
+    - choose another lender
+    - change my lender
+    - switch lender
+
+## Products
+
+- intent: products_1
+  examples: |
+    - Do you do second homes?
+    - Do you deal in second homes?
+
+- intent: products_2
+  examples: |
+    - Do you offer cashout refi
+    - do you deal in cashout refi
+
+- intent: products_3
+  examples: |
+    - Do you do short-term mortgages?
+    - Do you deal in short-term mortgages?
+
+- intent: products_4
+  examples: |
+    - Can you do investment properties?
+    - Do you deal in investment properties?
+
+- intent: products_5
+  examples: |
+    - Do you have ARM rates?
+    - Do you deal in ARM rates?
+
+- intent: products_6
+  examples: |
+    - Do you offer FHA offers
+    - Do you deal in FHA offers?
+
+- intent: products_7
+  examples: |
+    - Do you have VA loans
+    - Do you deal in VA loans
+
+- intent: products_8
+  examples: |
+    - Do you have jumbo loans
+    - Do you deal in jumbo loans

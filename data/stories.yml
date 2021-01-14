@@ -29,23 +29,21 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: closing
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: closing_1
-  - action: utter_closing_1
-  - intent: closing_2
-  - action: utter_closing_2
-  - intent: closing_3
-  - action: utter_closing_3
-  - intent: closing_4
-  - action: utter_closing_4
-  - intent: closing_5
-  - action: utter_closing_5
-  - intent: closing_6
-  - action: utter_closing_6
-  - intent: thanks
-  - action: utter_welcome
-  - action: utter_goodbye
+# - story: closing
+#   steps:
+#   - intent: closing_1
+#   - action: utter_closing_1
+#   - intent: closing_2
+#   - action: utter_closing_2
+#   - intent: closing_3
+#   - action: utter_closing_3
+#   - intent: closing_4
+#   - action: utter_closing_4
+#   - intent: closing_5
+#   - action: utter_closing_5
+#   - intent: closing_6
+#   - action: utter_closing_6
+#   - intent: thanks
+#   - action: utter_welcome
+#   - action: utter_goodbye
 
