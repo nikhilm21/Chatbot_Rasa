@@ -1,4 +1,4 @@
-version: '2.0'
+rasa version: '2.0'
 config:
   store_entities_as_slots: true
 session_config:
@@ -79,6 +79,10 @@ responses:
   - text: I am a bot, powered by Rasa.
   utter_welcome:
   - text: Welcome
+  utter_angry_path1:
+  - text: Please do provide your valuable feedback
+  utter_angry_path2:
+  - text: Ok, we are extremely sorry, Hope we have another chance to provide a better experience in the future. 
   utter_dissatisfied:
   - text: I recommend you talk with one of our home loan advisors who will personally answer your questions. Can I set up a phone appointment for you?
   utter_closing_1:
@@ -132,6 +136,7 @@ responses:
   - text: |-
       I understand. Keep in mind we can look over your current offer from another lender for free to make sure you are not getting hit with any sneaky fees or surprises.
        We like helping people get the best deal and save the most money with their mortgage financing...even if it's not our firm! 
-actions: []
+actions: 
+    - actions_feedback
 forms: {}
 e2e_actions: []

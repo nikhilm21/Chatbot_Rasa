@@ -33,10 +33,10 @@ rules:
     - intent: more_info
     - action: utter_more_info
   
-  - rule: Angry User
-    steps:
-    - intent: anger_response
-    - action: utter_anger_response
+  # - rule: Angry User
+  #   steps:
+  #   - intent: anger_response
+  #   - action: utter_anger_response
 
     # add text box with yes or no
 
