@@ -215,3 +215,97 @@ nlu:
   examples: |
     - Do you have jumbo loans
     - Do you deal in jumbo loans
+    
+    
+- intent: rates_1
+  examples: |
+    - what rate can you offer me
+    - What rate are you able to offer me?
+    - What rate are you capable of offering me?
+    - What rate were also you capable of offering me?
+    - What rate do seem to be you capable of offering me?
+    - What rate are you willing to offer me?
+    - What rate are you ready to offer me?
+
+    
+
+- intent: rates_2
+  examples: |
+    - what about a 15 year
+    - What about 15 years in a row?
+    - What about 15 years in total?
+
+- intent: rates_gen_Question_1
+  examples: |
+    - How often do you update your rates? 
+    - How often do you keep your rates updated?
+    - How often would you keep your rates updated?
+    - How often do you keep your rates updated?
+
+- intent: rates_gen_Question_2
+  examples: |
+    - Can I get cash out?
+
+- intent: rates_gen_Question_3
+  examples: |
+    - Can I negotiate a better rate ?  
+    - Can I negotiate a rate that's better ?
+
+- intent: rates_gen_Question_4
+  examples: |
+    - Can I buy down the rate ?
+    - Can I get the rate down ?
+
+- intent: rates_gen_Question_5
+  examples: |
+    - how long is rate locked for ?
+    - How long will the rate be locked down ?
+
+- intent: rates_gen_Question_6
+  examples: |
+    - How do you price your loans?
+    - How are your loans priced?
+
+- intent: fees_1
+  examples: | 
+    - How much are your fees? 
+    - How much do your fees cost?
+
+- intent: fees_2
+  examples: | 
+    - you don’t change any fees? How is that possible?
+    - Don't you adjust fees? How will it be possible?
+    - Don't you adjust fees? How would that be possible?
+
+- intent: fees_3
+  examples: | 
+    - Are there any closing fees or third party fees?
+    - Are there any fees for closure or fees for third parties?
+    - third party fees ?
+    - Fees for third parties?
+
+- intent: lender_1
+  examples: | 
+    - Sorry, chose another lender
+    - Sorry, another lender has been chosen
+    - Sorry, another lender has been selected
+    - Sorry, another lender was selected
+    - Sorry, another lender was appointed
+    - Sorry, another lender was picked
+
+- intent: lender_2
+  examples: | 
+    - Ok
+
+- intent: lender_3
+  examples: | 
+    - You guys suck
+
+- intent: lender_4
+  examples: | 
+    - I'm frustrated
+
+- intent: lender_5
+  examples: | 
+    - I'm not going to use you
+
