@@ -47,6 +47,8 @@ intents:
     use_entities: true
 - products_8:
     use_entities: true
+- products_9:
+    use_entities: true
 - company_information:
     use_entities: true
 - dissatisfied:
@@ -103,9 +105,9 @@ responses:
   utter_products_1:
   - text: Yes we offer second homes. Ready to apply? Just go to our free online application at <link> to get our best rate. It only takes 5-10 minutes
   utter_products_2:
-  - text: 'Yes we offer cash out options. Ready to apply? Just go to our free online application at <link> to get our best rate. It only takes 5-10 minutes. '
+  - text: Yes we offer cash out options. Ready to apply? Just go to our free online application at <link> to get our best rate. It only takes 5-10 minutes.
   utter_products_3:
-  - text: 'Yes. fixed, short-term and cash out options. Ready to apply? Just go to our free online application at <link> to get our best rate. It only takes 5-10 minutes. '
+  - text: Yes. fixed, short-term and cash out options. Ready to apply? Just go to our free online application at <link> to get our best rate. It only takes 5-10 minutes.
   utter_products_4:
   - text: Yes, we do
   utter_products_5:
@@ -116,6 +118,8 @@ responses:
   - text: At this time we do not offer VA loans, only fixed, short-term and cash out options. But check back with us soon.
   utter_products_8:
   - text: At this time we do not offer Jumbo loans. But check back with us soon.
+  utter_products_9:
+  - text: At this time we do not. But check back with us soon.
   utter_company_information:
   - text: |-
       Interfirst has been serving homeowners since 2001, with over $36B loans locked. A+ Rating with BBB and 4.4 score on Google reviews.

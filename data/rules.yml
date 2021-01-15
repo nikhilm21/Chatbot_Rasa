@@ -33,10 +33,11 @@ rules:
     - intent: more_info
     - action: utter_more_info
   
-  - rule: Angery User
+  - rule: Angry User
     steps:
     - intent: anger_response
     - action: utter_anger_response
+
     # add text box with yes or no
 
 #Closing
@@ -110,6 +111,11 @@ rules:
     steps:
     - intent: products_8
     - action: utter_products_8
+  
+  - rule: Products_9
+    steps:
+    - intent: products_9
+    - action: utter_products_9
 
 # Choose another lender
 

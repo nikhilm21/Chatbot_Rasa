@@ -1,6 +1,6 @@
 version: "2.0"
-
 nlu:
+
 - intent: greet
   examples: |
     - hey
@@ -16,7 +16,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - good afternoon
@@ -30,7 +29,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -39,7 +37,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -49,7 +46,6 @@ nlu:
     - don't like that
     - no way
     - not really
-
 - intent: mood_great
   examples: |
     - perfect
@@ -66,7 +62,6 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -83,14 +78,12 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
 - intent: thanks
   examples: |
     - thanks
@@ -105,6 +98,9 @@ nlu:
     - how long does it take to close
     - when will this close
     - time duration for closure
+    - How long it takes to close 
+    - How long is it going to take to close
+    - How long it takes to close, how long
 
 - intent: closing_2
   examples: |
@@ -112,60 +108,95 @@ nlu:
     - why such a long duration
     - so much time?
     - can you make it quick?
+    - Why is it taking so long to close
+    - Why is it going to take so long to close
+    - Why does it take so long to close things down
+    - Why is it taking such a long time to close
 
 - intent: closing_3
   examples: |
     - what if rate expires before closing
     - what if i close late
     - will the rate change
+    - If the rate expires before closing, what if
+    - What if the rate expires prior to closing
+    - What if, before closing, the rate expires
+    - What if before closing, the rate expires
+    - What if the rate expires before it closes
 
 - intent: closing_4
   examples: |
-    - is escrow required?
+    - is escrow required
     - is escrow essential
     - what if dont choose escrow
     - i dont want escrow
+    - Is escrow necessary
+    - Is escrow required for this
+    - Is escrow necessary for this
+    - Is an escrow necessary
+    - Is an escrow needed
 
 - intent: closing_5
   examples: |
-    - what’s the cost to waive escrow?
-    - how much to remove escrow?
-
+    - what’s the cost to waive escrow
+    - how much to remove escrow
+    - What's the cost of the escrow waiver
+    - What is the cost of the escrow waiver
+    - What are the costs of waiving escrow
+    - What is the cost of renouncing an escrow
+    - What is the expense of waiving escrow
+    
 - intent: closing_6
   examples: |
-    - can I waive property inspection for refi?   
-    - what if i dont want insepection for refi?
+    - can I waive property inspection for refi
+    - what if i dont want insepection for refi
+    - Can I waive a refi property inspection
+    - Can I waive the Refi property inspection
+    - I can waive the Refi property inspection
+    - May I waive a refi property inspection
+    - Can I waive a refi property inspection
 
+##Company Information
 
 - intent: company_information
   examples: |
     - tell me more about your company
     - what does your company do
     - some information about your company
+    - Tell me more about your business
+    - Tell me more about your business here
+    - Tell me a little more about your business
+    - Tell me more about your business, please
 
 - intent: more_info
   examples: |
     - where can i find out more
     - i need more info
+    - Where can I find more details?
+    - Where can I learn more about you?
+    - Where can I learn more about this?
+    - Where can I find more information?
 
 - intent: dissatisfied
   examples: |
-   - I'm not happy with your answers
-   - you are wrong
-   - i dislike your service
-   - i dislike you
-   - im going to complaint
-   - i aint happy
+    - I'm not happy with your answers
+    - you are wrong
+    - i dislike your service
+    - i dislike you
+    - im going to complaint
+    - i aint happy
 
 - intent: anger_response
   examples: |
     - You guys suck
     - I'm not going to use you
     - Worst company ever
-    - I want to report 
+    - I want to report
     - I want to report an issue
     - I have a complaint
     - Not happy with the service
+
+## Change lender
 
 - intent: change_lender
   examples: |
@@ -173,45 +204,91 @@ nlu:
     - choose another lender
     - change my lender
     - switch lender
-
-## Products
+    - Choose a different lender
+    - Select a different lender
+    - Pick a different lender
+    - Choose another creditor
+    - Select another lender
+  
+#Products
 
 - intent: products_1
   examples: |
     - Do you do second homes?
     - Do you deal in second homes?
+    - Are you making second homes?
+    - Are you making some second homes?
+    - Are you doing second homes, right?
+    - Are you doing 2nd homes?
 
 - intent: products_2
   examples: |
     - Do you offer cashout refi
     - do you deal in cashout refi
+    - Do you offer a refi cashout?
+    - Do you offer refi cashout
+    - Do you offer refi cashouts?
 
 - intent: products_3
   examples: |
     - Do you do short-term mortgages?
     - Do you deal in short-term mortgages?
+    - Are you dealing with short-term mortgages?
+    - Are you offering short-term mortgages?
+    - Are you creating short-term mortgages?
+    - Do you make mortgages for the short-term?
+    - Do you make mortgages for short-term purposes?
 
 - intent: products_4
   examples: |
     - Can you do investment properties?
     - Do you deal in investment properties?
+    - Can you make real estate investments?
+    - Can you make investments in real estate?
+    - Can you make investments in property?
+    - Could you make investments in property?
+    - Can you make a property investment?
 
 - intent: products_5
   examples: |
     - Do you have ARM rates?
     - Do you deal in ARM rates?
+    - Do you have rates for ARM?
+    - Have you got ARM rates?
+    - Have you got any ARM rates?
+    - You got the ARM rates?
 
 - intent: products_6
   examples: |
     - Do you offer FHA offers
     - Do you deal in FHA offers?
+    - Do you offer FHA deals?
+    - You are offering FHA offers
+    - Do you provide FHA offers?
+    - Do you offer FHA services?
+    - Do you offer FHA bids?
 
 - intent: products_7
   examples: |
     - Do you have VA loans
     - Do you deal in VA loans
+    - Do you offer VA loans
+    - Do you have VA loans for that?
+    - Do you have VA loans for this?
+    - You have VA loans, do you?
 
 - intent: products_8
   examples: |
     - Do you have jumbo loans
     - Do you deal in jumbo loans
+    - Have you got a jumbo loan?
+    - You have jumbo loans, do you?
+    - Do you have jumbo loans as well?
+
+- intent: products_9
+  examples: |
+    - Do you offer personal loans
+    - Do you offer loans that are personal?
+    - You're offering personal loans 
+    - Do you offer loans for personal use? 
+    - Do you make personal loans available?
