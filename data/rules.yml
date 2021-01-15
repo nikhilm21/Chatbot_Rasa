@@ -69,7 +69,56 @@ rules:
     steps:
     - intent: closing_6
     - action: utter_closing_6
-
+#rates
+  - rule: rates_1
+    steps:
+    - intent: rates_1
+    - action: utter_rates_1
+  - rule: rates_2
+    steps:
+    - intent: rates_2
+    - action: utter_rates_2
+  - rule: rates_gen_Question_1
+    steps:
+    - intent: rates_gen_Question_1
+    - action: utter_rates_gen_Question_1
+  - rule: rates_gen_Question_2
+    steps:
+    - intent: rates_gen_Question_2
+    - action: utter_rates_gen_Question_3
+  - rule: rates_gen_Question_3
+    steps:
+    - intent: rates_gen_Question_3
+    - action: utter_rates_gen_Question_3
+  - rule: rates_gen_Question_4
+    steps:
+    - intent: rates_gen_Question_4
+    - action: utter_rates_gen_Question_4
+  - rule: rates_gen_Question_5
+    steps:
+    - intent: rates_gen_Question_5
+    - action: utter_rates_gen_Question_5
+  - rule: rates_gen_Question_6
+    steps:
+    - intent: rates_gen_Question_6
+    - action: utter_rates_gen_Question_6
+#fees
+  - rule: fees_1
+    steps:
+    - intent: fees_1
+    - action: utter_fees_1
+  - rule: fees_2
+    steps:
+    - intent: fees_2
+    - action: utter_fees_3
+  
+  - rule: fees_3
+    steps:
+    - intent: fees_3
+    - action: utter_fees_3
+    
+    
+    
 #Products
   - rule: Products_1
     steps:
@@ -117,3 +166,26 @@ rules:
     steps:
     - intent: change_lender
     - action: utter_change_lender
+    
+#lender 
+  - rule: lender_1
+    steps:
+   - intent: lender_1
+   - action: utter_lender_1
+   
+  - rule: lender_2
+    steps:
+   - intent: lender_2
+   - action: utter_lender_2
+  - rule: lender_3
+    steps:
+   - intent: lender_3
+   - action: utter_lender_13   
+  - rule: lender_4
+    steps:
+   - intent: lender_4
+   - action: utter_lender_4
+  - rule: lender_5
+    steps:
+   - intent: lender_5
+   - action: utter_lender_5
