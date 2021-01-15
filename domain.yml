@@ -53,6 +53,40 @@ intents:
     use_entities: true
 - more_info:
     use_entities: true
+    
+- rates_1:
+    use_entities: true
+- rates_1:
+    use_entities: true
+- rates_gen_Question_1:
+    use_entities: true
+- rates_gen_Question_2:
+    use_entities: true
+- rates_gen_Question_3:
+    use_entities: true
+- rates_gen_Question_4:
+    use_entities: true
+- rates_gen_Question_5:
+    use_entities: true
+- rates_gen_Question_6:
+    use_entities: true
+- fees_1:
+    use_entities: true
+- fees_2:
+    use_entities: true
+- fees_3:
+    use_entities: true
+- lender_1:
+    use_entities: true
+- lender_2:
+    use_entities: true
+- lender_3:
+    use_entities: true
+- lender_4:
+    use_entities: true
+- lender_5:
+    use_entities: true
+
 - anger_response:
     use_entities: true
 - thanks:
@@ -122,6 +156,58 @@ responses:
        We offer zero points, zero origination fees, zero application fees or commissions for all our Fixed Rate, Short Term, Cash Out options. 
   utter_more_info:
   - text: You can visit interfirst.com and see links to BBB and About us in the footer
+  
+  
+  utter_rates_1:
+  - text: Based on the information you provided, we can offer a 30 year fixed rate refinance for <rate> with no lender no application fees and no points.
+
+  utter_rates_2:
+  - text: Based on the information you provided, we can offer a 15 year fixed rate refinance for <rate> with no lender no application fees and no points.
+
+  utter_rates_gen_Question_1:
+  - text: We update our rates every business day, depending on the marke
+
+  utter_rates_gen_Question_2:
+  - text: Depends on many factors, including the amount of your loan vs the value of your home. Let's see what we can do. Can I set up a personal phone appointment for you?
+  
+  utter_rates_gen_Question_3:
+  - text: Good question. our rates cannot be adjusted by paying points or receiving lender credits, in part because we do not charge you fees or points as a benefit.
+
+  
+  utter_rates_gen_Question_4:
+  - text: Good question. No our rates cannot be adjusted by paying points or receiving lender credits, in part because we do not charge you fees or points as a benefit.
+  
+  utter_rates_gen_Question_5:
+  - text: Rates are locked for 60 days
+
+  utter_rates_gen_Question_6:
+  - text: We offer common sense pricing.  One price for all.  We lock your rate for 60 days and unlike other lenders we don't charge add ons for waiving escrows or extending your rate.
+
+  utter_fees_1:
+  - text: Good question. Zero! There are no sneaky fees when you apply for a mortgage at Interfirst. Zero application fees, zero lender fees and no points.
+  
+  utter_fees_2:
+  - text: our focus on the best online experience possible, using technology to streamline your mortgage process, means we avoid all the overhead and pass all the savings on to you.
+
+  utter_fees_3:
+  - text: Based on the information you provided, your total fees would be $xxxx.  This includes the following fee breakdown:\n$xx.xx – Fee for Something\n$xx.XX – Fee for something else
+
+  utter_lender_1:
+  - text: I understand. Keep in mind we can look over your current offer from another lender for free to make sure you are not getting hit with any sneaky fees or surprises. We like helping people get the best deal and save the most money with their mortgage financing...even if it's not our firm!
+  
+  utter_lender_2:
+  - text: Can I set up a phone appointment for you? I promise to keep it short so you get accurate pricing
+
+  utter_lender_3:
+  - text: Can I ask what happened that made you frustrated?
+
+  utter_lender_4:
+  - text: I hear you. Can I ask what happened that made you frustrated?
+
+  utter_lender_5:
+  - text: Ok. Can I ask what happened that made you frustrated?
+
+  
   utter_anger_response:
   - text: Can I ask what happened that made you want to complaint?
   utter_change_lender:
