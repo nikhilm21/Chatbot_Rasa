@@ -51,8 +51,6 @@ intents:
     use_entities: true
 - company_information:
     use_entities: true
-- dissatisfied:
-    use_entities: true
 - more_info:
     use_entities: true
 - anger_response:
@@ -88,6 +86,8 @@ responses:
   - text: I recommend you talk with one of our home loan advisors who will personally answer your questions. Can I set up a phone appointment for you?
   utter_goodbye:
   - text: Hope we solved your problem, Have a good day
+  utter_thanks:
+  - text: Welcome! Happy to assist you
   utter_ask_feed:
   - text: "please provide your valuable feedback"
   utter_slots_values:

@@ -161,14 +161,6 @@ nlu:
     - Where can I learn more about this?
     - Where can I find more information?
 
-- intent: dissatisfied
-  examples: |
-    - I'm not happy with your answers
-    - you are wrong
-    - i dislike your service
-    - i dislike you
-    - im going to complaint
-    - i aint happy
 
 - intent: anger_response
   examples: |
@@ -178,6 +170,12 @@ nlu:
     - I want to report
     - I want to report an issue
     - Not happy with the service
+    - I'm not happy with your answers
+    - you are wrong
+    - i dislike your service
+    - i dislike you
+    - im going to complaint
+    - i aint happy
 
 ## Change lender
 

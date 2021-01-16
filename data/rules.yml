@@ -3,11 +3,16 @@ version: "2.0"
 rules:
 
   - rule: welcome user
-    # conversation_start: true  # this rule only applies at the beginning of a conversation
+    conversation_start: true  # this rule only applies at the beginning of a conversation
     steps:
     - intent: greet
     - action: utter_greet
     
+  - rule: say hi everytime user says hi
+    steps:
+    - intent: greet
+    - action: utter_greet
+
   - rule: Say goodbye anytime the user says goodbye
     steps:
     - intent: goodbye
@@ -18,10 +23,10 @@ rules:
     - intent: bot_challenge
     - action: utter_iamabot
 
-  - rule: Send user to home loan advisor when user is dissatisfid
-    steps:
-    - intent: dissatisfied
-    - action: utter_dissatisfied ##add call action
+  # - rule: Send user to home loan advisor when user is dissatisfid
+  #   steps:
+  #   - intent: dissatisfied
+  #   - action: utter_dissatisfied ##add call action
 
   - rule: Give company information whenever asked
     steps:
