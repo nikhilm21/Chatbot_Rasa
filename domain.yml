@@ -61,30 +61,37 @@ intents:
     use_entities: true
 - change_lender:
     use_entities: true
-entities: []
-slots: {}
+- book_appointment:
+    use_entities: true
+
+entities: 
+    - feed
+
+slots: 
+    feed:
+        type: any
+
 responses:
   utter_greet:
   - text: Hey! How may I help you?
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
   utter_did_that_help:
   - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: I am a bot, powered by Interfirst.
   utter_welcome:
-  - text: Welcome
+  - text: Hope that helped you :) 
   utter_angry_path1:
-  - text: Please do provide your valuable feedback
+  - text: Thank you for your feedback, we will get onto it to provide you the best service possible
   utter_angry_path2:
   - text: Ok, we are extremely sorry, Hope we have another chance to provide a better experience in the future. 
   utter_dissatisfied:
   - text: I recommend you talk with one of our home loan advisors who will personally answer your questions. Can I set up a phone appointment for you?
+  utter_goodbye:
+  - text: Hope we solved your problem, Have a good day
+  utter_ask_feed:
+  - text: "please provide your valuable feedback"
+  utter_slots_values:
+  - text: "please check the value and confirm \n - feedback: {feed}"
   utter_closing_1:
   - text: |-
       For a typical refinance our average closing is 6 to 8 weeks. We know how important your
@@ -131,12 +138,22 @@ responses:
   utter_more_info:
   - text: You can visit interfirst.com and see links to BBB and About us in the footer
   utter_anger_response:
-  - text: Can I ask what happened that made you want to complaint?
+  - text: "Can I ask what happened that you made you feel so?"
+    buttons:
+       - title: "Yes"
+         payload: "Yes"
+       - title: "No"
+         payload: "No"
+
   utter_change_lender:
   - text: |-
       I understand. Keep in mind we can look over your current offer from another lender for free to make sure you are not getting hit with any sneaky fees or surprises.
        We like helping people get the best deal and save the most money with their mortgage financing...even if it's not our firm! 
+
 actions: 
     - actions_feedback
-forms: {}
+    - action_book_appointment
+
+forms: 
+    - feedback_form
 e2e_actions: []

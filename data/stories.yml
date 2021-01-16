@@ -2,22 +2,17 @@ version: "2.0"
 
 stories:
 
-# - story: happy path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_great
-#   - action: utter_happy
-
-
 - story: angry user path 1
   steps:
   - intent: anger_response
   - action: utter_anger_response
   - intent: affirm
-  - action: utter_angry_path1
-  # - intent: 
+  - action: feedback_form
   - action: actions_feedback
+  - action: feedback_form
+  - active_loop: feedback_form
+  - active_loop: null 
+  - action: utter_angry_path1
 
 - story: angry user path 2
   steps:
@@ -27,7 +22,7 @@ stories:
   - action: utter_angry_path2
 
 
-# - story: sad path 1
+# - story: book appointment
 #   steps:
 #   - intent: greet
 #   - action: utter_greet
@@ -37,31 +32,4 @@ stories:
 #   - intent: affirm
 #   - action: utter_happy
 
-# - story: sad path 2
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_goodbye
-
-# - story: closing
-#   steps:
-#   - intent: closing_1
-#   - action: utter_closing_1
-#   - intent: closing_2
-#   - action: utter_closing_2
-#   - intent: closing_3
-#   - action: utter_closing_3
-#   - intent: closing_4
-#   - action: utter_closing_4
-#   - intent: closing_5
-#   - action: utter_closing_5
-#   - intent: closing_6
-#   - action: utter_closing_6
-#   - intent: thanks
-#   - action: utter_welcome
-#   - action: utter_goodbye
 

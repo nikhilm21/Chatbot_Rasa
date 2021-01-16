@@ -63,6 +63,18 @@ nlu:
     - ok
     - hmm
 
+##Book Appointment
+
+- intent: book_appointment
+  examples: |
+    - Call me Monday at 8 pm
+    - Book an appointment on Wednesday 5 pm
+    - callback on thursday 2 pm
+    - call me today at 3 pm
+    - 2pm today
+    - call me tommorow at 12 am
+    - 2am tommorow
+
 ##Closing
 
 - intent: closing_1
@@ -165,7 +177,6 @@ nlu:
     - Worst company ever
     - I want to report
     - I want to report an issue
-    - I have a complaint
     - Not happy with the service
 
 ## Change lender

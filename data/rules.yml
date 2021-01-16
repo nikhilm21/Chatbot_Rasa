@@ -3,7 +3,7 @@ version: "2.0"
 rules:
 
   - rule: welcome user
-    conversation_start: true  # this rule only applies at the beginning of a conversation
+    # conversation_start: true  # this rule only applies at the beginning of a conversation
     steps:
     - intent: greet
     - action: utter_greet
@@ -21,7 +21,7 @@ rules:
   - rule: Send user to home loan advisor when user is dissatisfid
     steps:
     - intent: dissatisfied
-    - action: utter_dissatisfied
+    - action: utter_dissatisfied ##add call action
 
   - rule: Give company information whenever asked
     steps:
@@ -33,13 +33,6 @@ rules:
     - intent: more_info
     - action: utter_more_info
   
-  # - rule: Angry User
-  #   steps:
-  #   - intent: anger_response
-  #   - action: utter_anger_response
-
-    # add text box with yes or no
-
 #Closing
   - rule: Closing_1
     steps:
