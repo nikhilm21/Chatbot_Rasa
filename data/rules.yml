@@ -2,11 +2,11 @@ version: "2.0"
 
 rules:
 
-  - rule: welcome user
-    conversation_start: true  # this rule only applies at the beginning of a conversation
-    steps:
-    - intent: greet
-    - action: utter_greet
+  # - rule: welcome user
+  #   conversation_start: true  # this rule only applies at the beginning of a conversation
+  #   steps:
+  #   - intent: greet
+  #   - action: utter_greet
     
   - rule: say hi everytime user says hi
     steps:
@@ -23,10 +23,18 @@ rules:
     - intent: bot_challenge
     - action: utter_iamabot
 
+
+  - rule: Implementation of the Two-Stage-Fallback
+    steps:
+    - intent: nlu_fallback
+    - action: action_two_stage_fallback
+    - active_loop: action_two_stage_fallback
+    
   # - rule: Send user to home loan advisor when user is dissatisfid
   #   steps:
   #   - intent: dissatisfied
   #   - action: utter_dissatisfied ##add call action
+
   - rule: Book appointment whenever user asks to call
     steps:
     - intent: book_appointment

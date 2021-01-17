@@ -1,4 +1,4 @@
-rasa version: '2.0'
+version: '2.0'
 config:
   store_entities_as_slots: true
 session_config:
@@ -63,17 +63,20 @@ intents:
     use_entities: true
 - reschedule_appointment:
     use_entities: true
-    
-entities: 
-    - feed
-    - time
-
-slots: 
-    feed:
-        type: any
-    time:
-        type: any
-
+entities:
+- feed
+- time
+slots:
+  feed:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  time:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_greet:
   - text: Hey! How may I help you?
@@ -82,11 +85,11 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Interfirst.
   utter_welcome:
-  - text: Hope that helped you :) 
+  - text: Hope that helped you :)
   utter_angry_path1:
   - text: Thank you for your feedback, we will get onto it to provide you the best service possible
   utter_angry_path2:
-  - text: Ok, we are extremely sorry, Hope we have another chance to provide a better experience in the future. 
+  - text: Ok, we are extremely sorry, Hope we have another chance to provide a better experience in the future.
   utter_dissatisfied:
   - text: I recommend you talk with one of our home loan advisors who will personally answer your questions. Can I set up a phone appointment for you?
   utter_goodbye:
@@ -94,9 +97,11 @@ responses:
   utter_thanks:
   - text: Welcome! Happy to assist you
   utter_ask_feed:
-  - text: "please provide your valuable feedback"
+  - text: please provide your valuable feedback
   utter_slots_values:
-  - text: "please check the value and confirm \n - feedback: {feed}"
+  - text: |-
+      please check the value and confirm 
+       - feedback: {feed}
   utter_closing_1:
   - text: |-
       For a typical refinance our average closing is 6 to 8 weeks. We know how important your
@@ -143,25 +148,32 @@ responses:
   utter_more_info:
   - text: You can visit interfirst.com and see links to BBB and About us in the footer
   utter_anger_response:
-  - text: "Can I ask what happened that you made you feel so?"
-    buttons:
-       - title: "Yes"
-         payload: "Yes"
-       - title: "No"
-         payload: "No"
+  - buttons:
+    - payload: Yes
+      title: Yes
+    - payload: No
+      title: No
+    text: Can I ask what happened that you made you feel so?
   utter_change_lender:
   - text: |-
       I understand. Keep in mind we can look over your current offer from another lender for free to make sure you are not getting hit with any sneaky fees or surprises.
        We like helping people get the best deal and save the most money with their mortgage financing...even if it's not our firm! 
   utter_confirm:
-  - text: "Ok you will recieve call on the scheduled time,\n If you want to change the time or date type reschedule with the updated date and time"
-
+  - text: |-
+      Ok you will recieve call on the scheduled time,
+       If you want to change the time or date type reschedule with the updated date and time
   utter_any_question:
-  - text: "If you have any questions regarding our service, please feel free to ask me"
-actions: 
-    - actions_feedback
-    - action_book_appointment
+  - text: If you have any questions regarding our service, please feel free to ask me
 
-forms: 
-    - feedback_form
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  
+actions:
+- actions_feedback
+- action_book_appointment
+- feedback_form
+
+forms:
+  feedback_form
+
 e2e_actions: []

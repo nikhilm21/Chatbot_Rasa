@@ -60,7 +60,6 @@ class ActionNewUser(FormAction):
 
         return []
 
-
 class ActionBookAppointment(Action):
 
     def name(self) -> Text:

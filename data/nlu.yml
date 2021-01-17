@@ -56,6 +56,7 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
 - intent: thanks
   examples: |
     - thanks
@@ -84,7 +85,7 @@ nlu:
     - move it ahead to tommorow 5 pm
     - move it thursday afternoon
     - reschedule my call at 5 am monday
-    
+
 ##Closing
 
 - intent: closing_1
@@ -186,6 +187,7 @@ nlu:
     - i dislike you
     - im going to complaint
     - i aint happy
+
 
 ## Change lender
 
