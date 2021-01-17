@@ -1,6 +1,6 @@
 # Chatbot_Rasa
 
-###To run the chatbot cli:
+### To run the chatbot cli:
 
 ```
 rasa run actions
