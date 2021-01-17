@@ -61,12 +61,17 @@ intents:
     use_entities: true
 - book_appointment:
     use_entities: true
-
+- reschedule_appointment:
+    use_entities: true
+    
 entities: 
     - feed
+    - time
 
 slots: 
     feed:
+        type: any
+    time:
         type: any
 
 responses:
@@ -144,12 +149,15 @@ responses:
          payload: "Yes"
        - title: "No"
          payload: "No"
-
   utter_change_lender:
   - text: |-
       I understand. Keep in mind we can look over your current offer from another lender for free to make sure you are not getting hit with any sneaky fees or surprises.
        We like helping people get the best deal and save the most money with their mortgage financing...even if it's not our firm! 
+  utter_confirm:
+  - text: "Ok you will recieve call on the scheduled time,\n If you want to change the time or date type reschedule with the updated date and time"
 
+  utter_any_question:
+  - text: "If you have any questions regarding our service, please feel free to ask me"
 actions: 
     - actions_feedback
     - action_book_appointment

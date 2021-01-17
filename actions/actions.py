@@ -60,19 +60,25 @@ class ActionNewUser(FormAction):
 
         return []
 
-# class ActionBookAppointment(Action):
 
-#     def name(self) -> Text:
-#         return "action_book_appointment"
+class ActionBookAppointment(Action):
 
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def name(self) -> Text:
+        return "action_book_appointment"
 
-#         time = tracker.get_slot('time')
-#         time_object = dt.strptime(time, "%Y-%m-%dT%H:%M:%S.%f%z")
-#         print(time_object)
-#         dispatcher.utter_message(text="Reached actions")
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-#         return []
+
+        time = tracker.get_slot('time')
+        time_object = dt.strptime(time, "%Y-%m-%dT%H:%M:%S.%f%z")
+        print(time_object)
+        time_ = time_object.strftime("%I %p")
+        date = time_object.strftime("%d %b %Y")
+
+        message = f"Ok,Scheduling your call on {date} at {time_}\n If you want to change the date or time type reschedule with updated date and time"
+        dispatcher.utter_message(message)
+
+        return []
 

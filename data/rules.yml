@@ -27,7 +27,18 @@ rules:
   #   steps:
   #   - intent: dissatisfied
   #   - action: utter_dissatisfied ##add call action
+  - rule: Book appointment whenever user asks to call
+    steps:
+    - intent: book_appointment
+    - action: action_book_appointment
+    - action: utter_any_question
 
+  - rule: Reschedule Appointment
+    steps: 
+    - intent: reschedule_appointment
+    - action: action_book_appointment
+    - action: utter_any_question
+  
   - rule: Give company information whenever asked
     steps:
     - intent: company_information

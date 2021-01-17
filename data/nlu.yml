@@ -75,6 +75,16 @@ nlu:
     - call me tommorow at 12 am
     - 2am tommorow
 
+- intent: reschedule_appointment
+  examples: |
+    - reschedule my call to 12 pm on Tuesday
+    - reschedule it to 23rd of Jan 2021
+    - change it to friday night
+    - change it to wednesday morning
+    - move it ahead to tommorow 5 pm
+    - move it thursday afternoon
+    - reschedule my call at 5 am monday
+    
 ##Closing
 
 - intent: closing_1
