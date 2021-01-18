@@ -79,7 +79,12 @@ slots:
     influence_conversation: false
 responses:
   utter_greet:
-  - text: Hey! How may I help you?
+  - buttons:
+    - payload: Tell me more about your company
+      title: Info
+    - payload: How long does it take to close
+      title: Close
+    text: 'Hey, how may I help you? \n You can a question or choose from the few frequently asked questions to get started'
   utter_did_that_help:
   - text: Did that help you?
   utter_iamabot:
@@ -164,16 +169,12 @@ responses:
        If you want to change the time or date type reschedule with the updated date and time
   utter_any_question:
   - text: If you have any questions regarding our service, please feel free to ask me
-
   utter_ask_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
-  
 actions:
 - actions_feedback
 - action_book_appointment
 - feedback_form
-
 forms:
-  feedback_form
-
+  feedback_form: null
 e2e_actions: []
