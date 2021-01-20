@@ -63,9 +63,32 @@ intents:
     use_entities: true
 - reschedule_appointment:
     use_entities: true
+- rate_update:
+    use_entities: true
+- rate_cash_out:
+    use_entities: true
+- rate_3:
+    use_entities: true
+- rate_4:
+    use_entities: true
+- rate_5:
+    use_entities: true
+- rate_6:
+    use_entities: true
+- rate_7:
+    use_entities: true
+- rate_8:
+    use_entities: true
+- fees_1:
+    use_entities: true
+- fees_2:
+    use_entities: true
+- fees_3:
+    use_entities: true
 entities:
 - feed
 - time
+- rate
 slots:
   feed:
     type: rasa.shared.core.slots.AnySlot
@@ -77,6 +100,11 @@ slots:
     initial_value: null
     auto_fill: true
     influence_conversation: false
+  rate:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_greet:
   - buttons:
@@ -84,7 +112,7 @@ responses:
       title: Info
     - payload: How long does it take to close
       title: Close
-    text: 'Hey, how may I help you? \n You can a question or choose from the few frequently asked questions to get started'
+    text: Hey, how may I help you? You can ask a question or choose from the few frequently asked questions to get started
   utter_did_that_help:
   - text: Did that help you?
   utter_iamabot:
@@ -171,10 +199,49 @@ responses:
   - text: If you have any questions regarding our service, please feel free to ask me
   utter_ask_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_rate_update:
+  - text: We update our rates every business day, depending on the market.
+  utter_rate_cash_out:
+  - buttons:
+    - payload: Yes
+      title: Yes
+    - payload: No
+      title: No
+    text: Depends on many factors, including the amount of your loan vs the value of your home. Let's see what we can do. Can I set up a personal phone appointment for you?
+  utter_rate_call_1:
+  - text: Ok, when can we schedule the call?
+  utter_rate_call_2:
+  - text: Okay, if you still wish to set up a call you can tell me the schedule time or ask me other queries
+  utter_rate_3:
+  - text: Our rates cannot be adjusted by paying points or receiving lender credits, in part because we do not charge you fees or points as a benefit.
+  utter_rate_4:
+  - text: No, our rates cannot be adjusted by paying points or receiving lender credits, in part because we do not charge you fees or points as a benefit.
+  utter_rate_5:
+  - text: Rates are locked for 60 days
+  utter_rate_6:
+  - text: We offer common sense pricing.  One price for all.  We lock your rate for 60 days and unlike other lenders we don't charge add ons for waiving escrows or extending your rate.
+  utter_rate_7:
+  - buttons:
+    - payload: Show me a plan for 15 years
+      title: '15'
+    - payload: Show me a plan for 20 years
+      title: '20'
+    - payload: Show me a plan for 25 years
+      title: '25'
+    - payload: Show me a plan for 30 years
+      title: '30'
+    text : What rate plan are you looking for?
+
+  utter_fees_1:
+  - text: Zero! There are no sneaky fees when you apply for a mortgage at Interfirst. Zero application fees, zero lender fees and no points.
+  utter_fees_2:
+  - text: Our focus on the best online experience possible, using technology to streamline your mortgage process, means we avoid all the overhead and pass all the savings on to you.
 actions:
 - actions_feedback
 - action_book_appointment
 - feedback_form
+- action_fees_3
+- action_rate
 forms:
   feedback_form: null
 e2e_actions: []

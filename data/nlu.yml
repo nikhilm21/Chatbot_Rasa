@@ -64,7 +64,7 @@ nlu:
     - ok
     - hmm
 
-##Book Appointment
+# Book Appointment
 
 - intent: book_appointment
   examples: |
@@ -86,8 +86,8 @@ nlu:
     - move it thursday afternoon
     - reschedule my call at 5 am monday
 
-##Closing
-
+# Closing
+ 
 - intent: closing_1
   examples: |
     - how long does it take to close
@@ -151,7 +151,7 @@ nlu:
     - May I waive a refi property inspection
     - Can I waive a refi property inspection
 
-##Company Information
+# Company Information
 
 - intent: company_information
   examples: |
@@ -189,7 +189,7 @@ nlu:
     - i aint happy
 
 
-## Change lender
+# Change lender
 
 - intent: change_lender
   examples: |
@@ -202,7 +202,97 @@ nlu:
     - Pick a different lender
     - Choose another creditor
     - Select another lender
-  
+
+# Rates
+
+- intent: rate_update
+  examples: |
+    - How often do you update your rates?
+    - How often do you keep your rates updated?
+    - How much are your rates updated?
+    - How much will your rates be updated?
+    - How often do you change your prices?
+    - How much do you keep your rates updated?
+    - How often are you going to update your rates?
+    - How often do you have to update your rates?
+    - How often do you upgrade your rates?
+    - How many times are you updating your rates?
+
+- intent: rate_cash_out
+  examples: |
+    - Can I get cash out
+    - Can I get some cash out
+    - Can I get cash out of it
+    - Can I get my cash out
+    - Could I get cash out of it?
+
+- intent: rate_3
+  examples: |
+    - Can I negotiate a better rate?
+    - Can I negotiate a rate that's better?
+    - May I get a better rate negotiated?
+    - Can I negotiate a rate that is better?
+    - Am I able to negotiate a better rate?
+    - Will I be able to negotiate a better rate?
+    - May I negotiate a better rate, please?
+    - Can I negotiate a better rate for that?
+    - Can I negotiate a lower rate?
+    - Can I negotiate a better rate, please?
+
+- intent: rate_4
+  examples: |
+    - Can I buy down the rate?
+    - Can I get the rate down?
+    - Can I get my rate down?
+    - May I purchase a rate down?
+    - Can I buy a rate down there?
+    - Can I get the rate down?
+    - May I buy the rate down?
+    - Can I buy the price down?
+    - Can I buy the rate down, please?
+
+- intent: rate_5
+  examples: |
+    - how long is rate locked for?
+    - How long is the rate locked?
+    - How long will the rate be locked for?
+    - How long has the rate been locked for?
+    - How long is the rate locked up for?
+    - How long has the rate locked for?
+    - How long will the rate be locked down?
+    - How long does the rate stay locked for?
+    - How long does the rate stay locked?
+
+- intent: rate_6
+  examples: |
+    - How do you price your loans?
+    - How are your loans priced?
+    - How are your borrowings priced?
+    - How are you pricing your borrowings?
+    - How are you pricing out your loans?
+    - How are you selling your credits?
+    - How do you get the price of your loans?
+    - How do you get a price for your loans?
+    - How are you going to price your loans?
+
+- intent: rate_7
+  examples: |
+    - I want to know about rates
+    - I just want to know about the rates
+    - I would like to know about the rates
+    - I want to know about the rate
+    - I want to know about the tariffs
+    - I would like to know about rates
+    - I would like to know about prices
+    - I want to know the costs
+    - I want to know the rates
+
+- intent: rate_8
+  examples: |
+    - Show me a plan for [30](rate) years
+    - Show me a plan for [20](rate) years
+    - show me a plan for [25](rate) years
+    - Show me a plan for [15](rate) years
 #Products
 
 - intent: products_1
@@ -285,3 +375,40 @@ nlu:
     - You're offering personal loans 
     - Do you offer loans for personal use? 
     - Do you make personal loans available?
+
+# Fees
+
+- intent: fees_1
+  examples: |
+    - How much are your fees?
+    - How many are the fees?
+    - How much do your fees cost?
+    - How many payments are there for you?
+    - How much do your fees charge?
+    - How much does your fee cost?
+    - How much do your fees cost?
+
+- intent: fees_2
+  examples: |
+    - you don’t charge any fees? How is that possible?
+    - Don't you owe fees? How will it be possible? 
+    - Don't you owe fees?
+    - you dont charge any fees?
+    - Don't you charge fees at all?
+    - Aren't you charging any fees?
+    - Aren't you charging any fees?
+    - You're not charging any fees?
+    - You are not charging any fees?
+    - You will not charge any fees?
+
+- intent: fees_3
+  examples: |
+    - Are there any closing fees or third party fees?
+    - Any closure fees or third-party fees exist
+    - Any closure fees or third party fees exist ?
+    - There are any closing or third-party charges ?
+    - Any closure fees or fees from third parties exist ?
+    - Are there any termination costs or fees for third parties?
+    - Are there any closing fees or fees from third parties?
+    - Are there any closing fees or fees of third parties?
+    - Are there any closing fees or fees to third parties?

@@ -4,6 +4,8 @@ stories:
 
 - story: angry user path 1
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: anger_response
   - action: utter_anger_response
   - intent: affirm
@@ -16,20 +18,38 @@ stories:
 
 - story: angry user path 2
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: anger_response
   - action: utter_anger_response
   - intent: deny
   - action: utter_angry_path2
 
 
-# - story: book appointment
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: affirm
-#   - action: utter_happy
+- story: cashing out rate path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: rate_cash_out
+  - action: utter_rate_cash_out
+  - intent: affirm
+  - action: utter_rate_call_1
+  - intent: book_appointment
+  - action: action_book_appointment
+  - action: utter_any_question
 
+- story: cashing out rate path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: rate_cash_out
+  - action: utter_rate_cash_out
+  - intent: deny
+  - action: utter_rate_call_2
 
+- story: Rates
+  steps:
+  - intent: rate_7
+  - action: utter_rate_7
+  - intent: rate_8
+  - action: action_rate

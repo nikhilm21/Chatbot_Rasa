@@ -140,3 +140,47 @@ rules:
     steps:
     - intent: change_lender
     - action: utter_change_lender
+
+# Rates
+
+  - rule: Update the rates
+    steps:
+    - intent: rate_update
+    - action: utter_rate_update
+
+  - rule: Rule 3
+    steps:
+    - intent: rate_3
+    - action: utter_rate_3
+
+  - rule: Rule 4
+    steps:
+    - intent: rate_4
+    - action: utter_rate_4
+
+  - rule: Rule 5
+    steps:
+    - intent: rate_5
+    - action: utter_rate_5
+
+  - rule: Rule 6
+    steps:
+    - intent: rate_6
+    - action: utter_rate_6
+
+# fees
+
+  - rule: Fees 1
+    steps:
+    - intent: fees_1
+    - action: utter_fees_1
+
+  - rule: Fees 2
+    steps:
+    - intent: fees_2
+    - action: utter_fees_2
+
+  - rule: Fees 3
+    steps:
+    - intent: fees_3
+    - action: action_fees_3
