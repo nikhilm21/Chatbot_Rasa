@@ -57,6 +57,10 @@ rules:
     - intent: more_info
     - action: utter_more_info
   
+  - rule: Show a plan
+    steps:
+    - intent: rate_8
+    - action: action_rate
 #Closing
   - rule: Closing_1
     steps:

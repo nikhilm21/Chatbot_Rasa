@@ -106,23 +106,25 @@ class ActionRates(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        rate = int(tracker.get_slot('rate'))
+        time = tracker.get_slot('number')
         rates = {15: [12], 20:[10],25:[8],30:[6]}
 
-        if rate == None:
+        if time == None:
             dispatcher.utter_message("Didnt get the rate could you try again")
-
-        for i in rates:
-            if i == rate:
-                fees = rates[rate][0]
-                dispatcher.utter_message(text = f"Based on the information you provided, we can offer a {rate} year fixed rate refinance for {fees} with no lender no application fees and no points.")
-                break
-            else: 
-                if i < 15:
-                    dispatcher.utter_message(text="Enter a time higher than 15 years")
-                elif i > 30:
-                    dispatcher.utter_message(text="Enter a time below 30 years")
-                else:
-                    dispatcher.utter_message(text="Sorry, Enter the timeline again")
+        
+        else:
+            time = int(time)
+            for i in rates:
+                if i == time:
+                    fees = rates[time][0]
+                    dispatcher.utter_message(text = f"Based on the information you provided, we can offer a {time} year fixed rate refinance for rate -{fees}% with no lender no application fees and no points.")
+                    break
+                else: 
+                    if i < 15:
+                        dispatcher.utter_message(text="Enter a time higher than 15 years")
+                    elif i > 30:
+                        dispatcher.utter_message(text="Enter a time below 30 years")
+                    else:
+                        dispatcher.utter_message(text="Sorry, Enter the timeline again")
 
         return []

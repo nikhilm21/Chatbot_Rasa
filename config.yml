@@ -24,7 +24,7 @@ pipeline:
     # url of the running duckling server
     url: "http://localhost:8000"
     # dimensions to extract
-    dimensions: ["time"]
+    dimensions: ["time","number"]
     timezone: "India/Kolkata"
 
 # Configuration for Rasa Core.

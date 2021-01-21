@@ -88,7 +88,7 @@ intents:
 entities:
 - feed
 - time
-- rate
+- number
 slots:
   feed:
     type: rasa.shared.core.slots.AnySlot
@@ -100,7 +100,7 @@ slots:
     initial_value: null
     auto_fill: true
     influence_conversation: false
-  rate:
+  number:
     type: rasa.shared.core.slots.AnySlot
     initial_value: null
     auto_fill: true

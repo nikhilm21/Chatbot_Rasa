@@ -289,10 +289,13 @@ nlu:
 
 - intent: rate_8
   examples: |
-    - Show me a plan for [30](rate) years
-    - Show me a plan for [20](rate) years
-    - show me a plan for [25](rate) years
-    - Show me a plan for [15](rate) years
+    - Show me a plan for 30 years
+    - Show me a plan for 20 years
+    - show me a plan for 25 years
+    - Show me a plan for 15 years
+    - Show me a plan for 10 years
+    - Show me a plan for 40 years
+    
 #Products
 
 - intent: products_1

@@ -47,9 +47,9 @@ stories:
   - intent: deny
   - action: utter_rate_call_2
 
-- story: Rates
-  steps:
-  - intent: rate_7
-  - action: utter_rate_7
-  - intent: rate_8
-  - action: action_rate
+# - story: Rates
+#   steps:
+#   - intent: rate_7
+#   - action: utter_rate_7
+#   - intent: rate_8
+#   - action: action_rate
