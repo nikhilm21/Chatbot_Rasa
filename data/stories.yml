@@ -4,8 +4,6 @@ stories:
 
 - story: angry user path 1
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: anger_response
   - action: utter_anger_response
   - intent: affirm
@@ -15,21 +13,19 @@ stories:
   - active_loop: feedback_form
   - active_loop: null 
   - action: utter_angry_path1
+  - action: action_reset_all_slots
 
 - story: angry user path 2
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: anger_response
   - action: utter_anger_response
   - intent: deny
   - action: utter_angry_path2
+  - action: action_reset_all_slots
 
 
 - story: cashing out rate path 1
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: rate_cash_out
   - action: utter_rate_cash_out
   - intent: affirm
@@ -37,15 +33,15 @@ stories:
   - intent: book_appointment
   - action: action_book_appointment
   - action: utter_any_question
+  # - checkpoint: check_flow_finished
 
 - story: cashing out rate path 2
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: rate_cash_out
   - action: utter_rate_cash_out
   - intent: deny
   - action: utter_rate_call_2
+  # - checkpoint: check_flow_finished
 
 # - story: Rates
 #   steps:

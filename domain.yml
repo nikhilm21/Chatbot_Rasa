@@ -242,6 +242,7 @@ actions:
 - feedback_form
 - action_fees_3
 - action_rate
+- action_reset_all_slots
 forms:
   feedback_form: null
 e2e_actions: []

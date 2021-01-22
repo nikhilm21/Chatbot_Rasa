@@ -57,10 +57,7 @@ rules:
     - intent: more_info
     - action: utter_more_info
   
-  - rule: Show a plan
-    steps:
-    - intent: rate_8
-    - action: action_rate
+
 #Closing
   - rule: Closing_1
     steps:
@@ -152,17 +149,17 @@ rules:
     - intent: rate_update
     - action: utter_rate_update
 
-  - rule: Rule 3
+  - rule: Rate 3
     steps:
     - intent: rate_3
     - action: utter_rate_3
 
-  - rule: Rule 4
+  - rule: Rate 4
     steps:
     - intent: rate_4
     - action: utter_rate_4
 
-  - rule: Rule 5
+  - rule: Rate 5
     steps:
     - intent: rate_5
     - action: utter_rate_5
@@ -172,6 +169,15 @@ rules:
     - intent: rate_6
     - action: utter_rate_6
 
+  - rule: User wants to know about rates
+    steps:
+    - intent: rate_7
+    - action: utter_rate_7
+
+  - rule: Show a plan
+    steps:
+    - intent: rate_8
+    - action: action_rate
 # fees
 
   - rule: Fees 1

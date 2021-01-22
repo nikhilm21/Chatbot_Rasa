@@ -118,13 +118,13 @@ class ActionRates(Action):
                 if i == time:
                     fees = rates[time][0]
                     dispatcher.utter_message(text = f"Based on the information you provided, we can offer a {time} year fixed rate refinance for rate -{fees}% with no lender no application fees and no points.")
-                    break
-                else: 
-                    if i < 15:
-                        dispatcher.utter_message(text="Enter a time higher than 15 years")
-                    elif i > 30:
-                        dispatcher.utter_message(text="Enter a time below 30 years")
-                    else:
-                        dispatcher.utter_message(text="Sorry, Enter the timeline again")
+                #     break
+                # else: 
+                #     if i < 15:
+                #         dispatcher.utter_message(text="Enter a time higher than 15 years")
+                #     elif i > 30:
+                #         dispatcher.utter_message(text="Enter a time below 30 years")
+                #     else:
+                #         dispatcher.utter_message(text="Sorry, Enter the timeline again")
 
         return []
