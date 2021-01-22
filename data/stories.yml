@@ -13,7 +13,7 @@ stories:
   - active_loop: feedback_form
   - active_loop: null 
   - action: utter_angry_path1
-  - action: action_reset_all_slots
+  
 
 - story: angry user path 2
   steps:
@@ -21,26 +21,28 @@ stories:
   - action: utter_anger_response
   - intent: deny
   - action: utter_angry_path2
-  - action: action_reset_all_slots
+  # - action: action_reset_all_slots
 
 
-- story: cashing out rate path 1
-  steps:
-  - intent: rate_cash_out
-  - action: utter_rate_cash_out
-  - intent: affirm
-  - action: utter_rate_call_1
-  - intent: book_appointment
-  - action: action_book_appointment
-  - action: utter_any_question
-  # - checkpoint: check_flow_finished
+# - story: cashing out rate path 1
+#   steps:
+#   - intent: rate_cash_out
+#   - action: utter_rate_cash_out
+#   - intent: affirm
+#   - action: utter_rate_call_1
+#   - intent: book_appointment
+#   - action: action_book_appointment
+#   - slot_was_set:
+#     - time: null
+#   - action: utter_any_question
+#   # - checkpoint: check_flow_finished
 
-- story: cashing out rate path 2
-  steps:
-  - intent: rate_cash_out
-  - action: utter_rate_cash_out
-  - intent: deny
-  - action: utter_rate_call_2
+# - story: cashing out rate path 2
+#   steps:
+#   - intent: rate_cash_out
+#   - action: utter_rate_cash_out
+#   - intent: deny
+#   - action: utter_rate_call_2
   # - checkpoint: check_flow_finished
 
 # - story: Rates

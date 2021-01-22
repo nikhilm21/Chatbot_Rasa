@@ -194,3 +194,29 @@ rules:
     steps:
     - intent: fees_3
     - action: action_fees_3
+
+
+#
+  - rule: Activate feedback form
+    steps: 
+      - intent: give_feedback
+      - action: feedback_form
+      - active_loop: feedback_form
+
+  - rule: Submit Form
+    condition:
+    - active_loop: feedback_form
+    steps:
+      - action: feedback_form
+      - active_loop: null
+      - action: utter_angry_path1
+
+  - rule: angry user 
+    steps:
+    - intent: anger_response
+    - action: utter_anger_response
+
+  - rule: deny
+    steps:
+    - intent: deny
+    - action: utter_angry_path2

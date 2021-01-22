@@ -415,3 +415,13 @@ nlu:
     - Are there any closing fees or fees from third parties?
     - Are there any closing fees or fees of third parties?
     - Are there any closing fees or fees to third parties?
+
+- intent: give_feedback
+  examples: |
+    - Give feedback
+    - Feedback to Give
+    - Giving feedback
+    - Provide feedback
+    - Give your feedback
+    - Please give feedback
+    - Give feedback, please

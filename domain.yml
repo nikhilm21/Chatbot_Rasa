@@ -85,26 +85,19 @@ intents:
     use_entities: true
 - fees_3:
     use_entities: true
+- give_feedback:
+    use_entities: true
 entities:
 - feed
 - time
 - number
 slots:
   feed:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: false
+    type: any
   time:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: false
+    type: any
   number:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: false
+    type: any
 responses:
   utter_greet:
   - buttons:
@@ -182,7 +175,7 @@ responses:
   - text: You can visit interfirst.com and see links to BBB and About us in the footer
   utter_anger_response:
   - buttons:
-    - payload: Yes
+    - payload: Give Feedback
       title: Yes
     - payload: No
       title: No
