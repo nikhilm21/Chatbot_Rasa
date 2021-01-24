@@ -20,34 +20,22 @@ stories:
   - intent: anger_response
   - action: utter_anger_response
   - intent: deny
-  - action: utter_angry_path2
-  # - action: action_reset_all_slots
+  - action: utter_rate_call_2
 
 
-# - story: cashing out rate path 1
-#   steps:
-#   - intent: rate_cash_out
-#   - action: utter_rate_cash_out
-#   - intent: affirm
-#   - action: utter_rate_call_1
-#   - intent: book_appointment
-#   - action: action_book_appointment
-#   - slot_was_set:
-#     - time: null
-#   - action: utter_any_question
-#   # - checkpoint: check_flow_finished
+- story: cashing out rate path 1
+  steps:
+  - intent: rate_cash_out
+  - action: utter_rate_cash_out
+  - intent: affirm
+  - action: utter_rate_call_1
+  - intent: book_appointment
+  - action: action_book_appointment
+  - action: utter_any_question
 
-# - story: cashing out rate path 2
-#   steps:
-#   - intent: rate_cash_out
-#   - action: utter_rate_cash_out
-#   - intent: deny
-#   - action: utter_rate_call_2
-  # - checkpoint: check_flow_finished
-
-# - story: Rates
-#   steps:
-#   - intent: rate_7
-#   - action: utter_rate_7
-#   - intent: rate_8
-#   - action: action_rate
+- story: cashing out rate path 2
+  steps:
+  - intent: rate_cash_out
+  - action: utter_rate_cash_out
+  - intent: deny
+  - action: utter_rate_call_2

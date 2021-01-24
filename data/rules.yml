@@ -12,6 +12,7 @@ rules:
     steps:
     - intent: greet
     - action: utter_greet
+    - action: utter_bot_capabilities
     
   - rule: Say goodbye anytime the user says goodbye
     steps:
@@ -29,11 +30,13 @@ rules:
     - intent: nlu_fallback
     - action: action_two_stage_fallback
     - active_loop: action_two_stage_fallback
-    
-  # - rule: Send user to home loan advisor when user is dissatisfid
-  #   steps:
-  #   - intent: dissatisfied
-  #   - action: utter_dissatisfied ##add call action
+
+# Booking appointment
+
+  - rule: scheduling call with user
+    steps:
+    - intent: schedule_call
+    - action: utter_rate_call_1
 
   - rule: Book appointment whenever user asks to call
     steps:
@@ -178,6 +181,11 @@ rules:
     steps:
     - intent: rate_8
     - action: action_rate
+
+  - rule: cashing out rate
+    steps:
+    - intent: rate_cash_out
+    - action: utter_rate_cash_out
 # fees
 
   - rule: Fees 1
@@ -195,8 +203,8 @@ rules:
     - intent: fees_3
     - action: action_fees_3
 
+# Feedback
 
-#
   - rule: Activate feedback form
     steps: 
       - intent: give_feedback
@@ -219,4 +227,10 @@ rules:
   - rule: deny
     steps:
     - intent: deny
-    - action: utter_angry_path2
+    - action: utter_rate_call_2
+
+# Bot capabilities
+  - rule: Give user list of options when asked
+    steps:
+    - intent: bot_capabilities
+    - action: utter_bot_capabilities

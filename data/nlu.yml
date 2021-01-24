@@ -66,6 +66,18 @@ nlu:
 
 # Book Appointment
 
+- intent: schedule_call
+  examples: |
+    - schedule my call
+    - Schedule a call from me
+    - Make my call scheduled
+    - Schedule a call for me
+    - Schedule a call with me
+    - Schedule the call for me
+    - Schedule my phone call
+    - Plan my call
+
+
 - intent: book_appointment
   examples: |
     - Call me Monday at 8 pm
@@ -162,6 +174,8 @@ nlu:
     - Tell me more about your business here
     - Tell me a little more about your business
     - Tell me more about your business, please
+    - Tell me more about interfirst
+    - I want to know more about interfirst
 
 - intent: more_info
   examples: |
@@ -295,6 +309,12 @@ nlu:
     - Show me a plan for 15 years
     - Show me a plan for 10 years
     - Show me a plan for 40 years
+    - 20
+    - 30
+    - 10
+    - 15
+    - 40
+    - 25
     
 #Products
 
@@ -425,3 +445,14 @@ nlu:
     - Give your feedback
     - Please give feedback
     - Give feedback, please
+
+- intent: bot_capabilities
+  examples: |
+    - What can you do ?
+    - What are you able to do?
+    - What are you capable of doing?
+    - And what can you do?
+    - What could you do
+    - What are the things i can ask you?
+    - WHat can I ask you?
+
