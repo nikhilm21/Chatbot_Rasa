@@ -91,18 +91,28 @@ intents:
     use_entities: true
 - schedule_call:
     use_entities: true
-
+- nlu_fallback:
+    use_entities: true
 entities:
 - feed
 - time
 - number
 slots:
   feed:
-    type: any
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
   time:
-    type: any
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
   number:
-    type: any
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_greet:
   - text: Hey, how may I help you?
@@ -121,7 +131,12 @@ responses:
   utter_goodbye:
   - text: Hope we solved your problem, Have a good day
   utter_thanks:
-  - text: Welcome! Happy to assist you
+  - buttons:
+    - payload: Ask for further options
+      title: Yes
+    - payload: Goodbye
+      title: No
+    text: Is there anything else i can assist you with?
   utter_ask_feed:
   - text: please provide your valuable feedback
   utter_slots_values:
@@ -223,14 +238,15 @@ responses:
       title: '25'
     - payload: Show me a plan for 30 years
       title: '30'
-    text : What rate plan are you looking for?
-
+    text: What rate plan are you looking for?
   utter_fees_1:
   - text: Zero! There are no sneaky fees when you apply for a mortgage at Interfirst. Zero application fees, zero lender fees and no points.
   utter_fees_2:
   - text: Our focus on the best online experience possible, using technology to streamline your mortgage process, means we avoid all the overhead and pass all the savings on to you.
   utter_bot_capabilities:
   - buttons:
+    - payload: Schedule my call
+      title: Scheduling a call
     - payload: Are there any closing fees or third party fees
       title: Fees Breakdown and Information
     - payload: Do you offer cashout refi
@@ -238,7 +254,7 @@ responses:
     - payload: How long does it take to close
       title: Closing related queries
     - payload: I want to cash out
-      title: Cashing out 
+      title: Cashing out
     - payload: I want to know about rates
       title: Rate Information
     - payload: Choose another lender
@@ -246,7 +262,6 @@ responses:
     - payload: Tell me more about your company
       title: Company Information
     text: Some things you can ask me
-
 actions:
 - actions_feedback
 - action_book_appointment

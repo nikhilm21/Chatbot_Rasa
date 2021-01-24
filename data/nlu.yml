@@ -63,6 +63,9 @@ nlu:
     - thank you
     - ok
     - hmm
+    - ok
+    - great
+    - nice
 
 # Book Appointment
 
@@ -97,6 +100,9 @@ nlu:
     - move it ahead to tommorow 5 pm
     - move it thursday afternoon
     - reschedule my call at 5 am monday
+    - reschedule on 29th jan
+    - reschedule it to 3rd jan
+    
 
 # Closing
  
@@ -455,4 +461,6 @@ nlu:
     - What could you do
     - What are the things i can ask you?
     - WHat can I ask you?
+    - Ask for further options
+
 
