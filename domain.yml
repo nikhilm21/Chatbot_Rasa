@@ -261,7 +261,7 @@ responses:
       title: Changing the lender
     - payload: Tell me more about your company
       title: Company Information
-    text: Some things you can ask me
+    text: These are the following things I can help you with
 actions:
 - actions_feedback
 - action_book_appointment
