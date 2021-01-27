@@ -90,6 +90,13 @@ nlu:
     - 2pm today
     - call me tommorow at 12 am
     - 2am tommorow
+    - call me on tuesday 4 pm
+    - call me on friday 2 am
+    - call me next monday 3 pm
+    - call me next thursday 4 pm
+    - can you please call me on wed 4pm
+    - can you please call me on thurs 5 pm
+    - can you please call me on mon 2 am
 
 - intent: reschedule_appointment
   examples: |
@@ -103,6 +110,16 @@ nlu:
     - reschedule on 29th jan
     - reschedule it to 3rd jan
     
+- intent: talk_to_someone
+  examples: |
+    - Do i need to talk to someone
+    - Do I need to talk to someone else
+    - Do I have to talk to someone?
+    - Do I need to have a conversation with someone
+    - Do I need to speak to someone about this?
+    - Do I need to talk with someone about it?
+    - Do I need to speak with someone about it?
+    - Do I need to talk with someone about this?
 
 # Closing
  

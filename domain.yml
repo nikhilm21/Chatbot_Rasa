@@ -93,6 +93,8 @@ intents:
     use_entities: true
 - nlu_fallback:
     use_entities: true
+- talk_to_someone:
+    use_entities: true
 entities:
 - feed
 - time
@@ -205,7 +207,7 @@ responses:
        If you want to change the time or date type reschedule with the updated date and time
   utter_any_question:
   - text: If you have any questions regarding our service, please feel free to ask me
-  utter_ask_rephrase:
+  utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_rate_update:
   - text: We update our rates every business day, depending on the market.
@@ -262,6 +264,8 @@ responses:
     - payload: Tell me more about your company
       title: Company Information
     text: These are the following things I can help you with
+  utter_talk_someone:
+  - text: Well, not if you don't want to and if you complete our online application and provide all required documents. The reason for a personal conversation is so that we can discuss your options and pick the one that best serves your financial goals.
 actions:
 - actions_feedback
 - action_book_appointment

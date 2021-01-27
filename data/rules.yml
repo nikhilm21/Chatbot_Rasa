@@ -30,12 +30,17 @@ rules:
     - action: utter_iamabot
 
 
-  - rule: Implementation of the Two-Stage-Fallback
+  # - rule: Implementation of the Two-Stage-Fallback
+  #   steps:
+  #   - intent: nlu_fallback
+  #   - action: action_two_stage_fallback
+  #   - active_loop: action_two_stage_fallback
+
+
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
     steps:
     - intent: nlu_fallback
-    - action: action_two_stage_fallback
-    - active_loop: action_two_stage_fallback
-
+    - action: utter_please_rephrase
 # Booking appointment
 
   - rule: scheduling call with user
@@ -65,7 +70,11 @@ rules:
     - intent: more_info
     - action: utter_more_info
   
-
+  - rule: Talk to someone
+    steps:
+    - intent: talk_to_someone
+    - action: utter_talk_someone
+  
 #Closing
   - rule: Closing_1
     steps:
