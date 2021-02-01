@@ -245,25 +245,6 @@ responses:
   - text: Zero! There are no sneaky fees when you apply for a mortgage at Interfirst. Zero application fees, zero lender fees and no points.
   utter_fees_2:
   - text: Our focus on the best online experience possible, using technology to streamline your mortgage process, means we avoid all the overhead and pass all the savings on to you.
-  utter_bot_capabilities:
-  - buttons:
-    - payload: Schedule my call
-      title: Scheduling a call
-    - payload: Are there any closing fees or third party fees
-      title: Fees Breakdown and Information
-    - payload: Do you offer cashout refi
-      title: General product questions
-    - payload: How long does it take to close
-      title: Closing related queries
-    - payload: I want to cash out
-      title: Cashing out
-    - payload: I want to know about rates
-      title: Rate Information
-    - payload: Choose another lender
-      title: Changing the lender
-    - payload: Tell me more about your company
-      title: Company Information
-    text: These are the following things I can help you with
   utter_talk_someone:
   - text: Well, not if you don't want to and if you complete our online application and provide all required documents. The reason for a personal conversation is so that we can discuss your options and pick the one that best serves your financial goals.
 actions:

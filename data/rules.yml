@@ -12,7 +12,7 @@ rules:
     steps:
     - intent: greet
     - action: utter_greet
-    - action: utter_bot_capabilities
+    # - action: utter_bot_capabilities
     
   - rule: Say goodbye anytime the user says goodbye
     steps:
@@ -247,4 +247,4 @@ rules:
   - rule: Give user list of options when asked
     steps:
     - intent: bot_capabilities
-    - action: utter_bot_capabilities
+    # - action: utter_bot_capabilities

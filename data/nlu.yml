@@ -97,6 +97,8 @@ nlu:
     - can you please call me on wed 4pm
     - can you please call me on thurs 5 pm
     - can you please call me on mon 2 am
+    - schedule a call for me on tuesday 3 pm
+    - schedule a call on tuesday 2 pm
 
 - intent: reschedule_appointment
   examples: |
