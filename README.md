@@ -63,6 +63,14 @@ This project is licensed under the MIT License. For more details, see the LICENS
 - Rasa: The chatbot framework used in this project.
 - spaCy: Used for natural language understanding.
 
+### Questions or Feedback?
+
+If you have any questions, feedback, or would like to contribute to this project, feel free to open an issue or reach out to the project owner, [Nikhil Mishra](https://github.com/nikhilm21).
+
+Happy Chatbot Building!
+
+
+
 
 
 
