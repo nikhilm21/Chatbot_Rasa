@@ -24,7 +24,7 @@ Before you start, make sure you have the following installed:
 - [Rasa](https://rasa.com/docs/rasa/installation) (>=2.0)
 - [spaCy](https://spacy.io/usage) (for NLU)
 
-### Getting Started
+## Getting Started
 
 1. Clone this repository:
 
@@ -50,20 +50,20 @@ Before you start, make sure you have the following installed:
   rasa x
   ```
 
-### Interact with the chatbot: 
+## Interact with the chatbot: 
 You can interact with the chatbot by sending POST requests to http://localhost:5005/webhooks/rest/webhook. You can also use the Rasa X interface for more interactive conversation management. 
 
-### Customization
+## Customization
 To customize the chatbot for your specific use case, you can modify the training data and fine-tune the models located in the data directory. Add your own intents, responses, and actions to tailor the chatbot to your requirements.
 
-### License
+## License
 This project is licensed under the MIT License. For more details, see the LICENSE file.
 
-### Acknowledgments
+## Acknowledgments
 - Rasa: The chatbot framework used in this project.
 - spaCy: Used for natural language understanding.
 
-### Questions or Feedback?
+## Questions or Feedback?
 
 If you have any questions, feedback, or would like to contribute to this project, feel free to open an issue or reach out to the project owner, [Nikhil Mishra](https://github.com/nikhilm21).
 
